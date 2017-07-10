@@ -1,4 +1,21 @@
 defmodule DuowebEx do
+  @moduledoc """
+  Elixir wrapper for :duoweb
+
+  Configure in mix config
+
+  To generate a iframe request ID
+  resp = DuowebEx.sign_request(uid)
+
+  On the response from Duo validate with:
+
+  ```elixir
+  case DuowebEx.verify_response(resp) do
+    {:ok, uid} -> do_something_with_user(uid)
+    error -> handle_error(error)
+  end
+  ```
+  """
 
   @bad_a_key_len "Application Secrety Key (akey) must be >= 40 characters"
 
