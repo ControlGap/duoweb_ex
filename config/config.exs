@@ -10,12 +10,6 @@ use Mix.Config
 
 # You can configure for your application as:
 #
-config :duoweb_ex, 
-    ikey: System.get_env("DUO_IKEY"),
-    skey: System.get_env("DUO_SKEY"),
-    akey: System.get_env("DUO_AKEY"),
-    host: System.get_env("DUO_HOST")
-
 
 #
 # And access this configuration in your application as:
